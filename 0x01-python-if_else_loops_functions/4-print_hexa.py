@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-for num in range(99):
-    print(f"Decimal: {num}, Hexadecimal: {hex(num)}")
+for num in range(0, 99):
+    print("{} = {}".format(num, hex(num)))
