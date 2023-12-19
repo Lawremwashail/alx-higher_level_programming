@@ -16,9 +16,10 @@ class Square:
     def size(self):
         """
         Get or set the current size of the square
-        Returns:
-            TypeError: if size is not an integer
-            ValueError: if value is less than 0
+
+        Raises:
+            TypeError if size is not an integer
+            ValueError if value is less than 0
         """
         return (self.__size)
 
@@ -31,5 +32,9 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Returns the Area of the square"""
-        return (self.__size ** 2)
+        """Area of the square
+
+        Returns:
+            The size of the square
+        """
+        return (self.__size * self.__size)
