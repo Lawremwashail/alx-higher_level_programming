@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Represents the rectangle"""
+
     def __init__(self, width=0, height=0):
         """Initialization for rectangle
         Args:
@@ -28,7 +29,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getter/setter for the height if the rectangle"""
+        """Getter/setter for the height of the rectangle"""
         return self.__height
 
     @height.setter
