@@ -41,22 +41,22 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-        def area(self):
-            return self.__width * self.__height
+    def area(self):
+        return self.__width * self.__height
 
-        def perimeter(self):
-            if self.__width == 0 or self.__height == 0:
-                return (0)
-            return 2 * (self.__width + self.__height)
+    def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return (0)
+        return 2 * (self.__width + self.__height)
 
-        def __str__(self):
-            if self._width == 0 or self._height == 0:
-                return ""
-            else:
-                rectangle_str = ""
-                for _ in range(self.__height):
-                    rectangle_str += '#' * self.__width + '\n'
-            return rectangle_str.rstrip()
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            rectangle_str = ""
+            for _ in range(self.__height):
+                rectangle_str += '#' * self.__width + '\n'
+        return rectangle_str.rstrip()
 
-        def __repr__(self):
-            return (f"Rectangle({self.__width}, {self.__height})")
+    def __repr__(self):
+        return (f"Rectangle({self.__width}, {self.__height})")
