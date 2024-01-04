@@ -3,12 +3,12 @@
 
 
 class Rectange:
-
+    """Represents the rectangle"""
     def __init__(self, width=0, height=0):
         """Initialization for rectangle
         Args:
-            width: The width of the rectangle
-            height: The height of the rectangle
+            width (int): The width of the rectangle
+            height (int): The height of the rectangle
         Raises:
             TypeError: If width and height are not an interger
             ValueError: If width and height are less than 0
@@ -18,6 +18,7 @@ class Rectange:
 
     @property
     def width(self):
+        """Getter/setter for width of the rectangle"""
         return self.__width
 
     @width.setter
@@ -31,6 +32,7 @@ class Rectange:
 
     @property
     def height(self):
+        """Getter/setter for the height if the rectangle"""
         return self.__height
 
     @height.setter
