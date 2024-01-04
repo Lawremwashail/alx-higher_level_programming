@@ -9,9 +9,6 @@ class Rectange:
         Args:
             width (int): The width of the rectangle
             height (int): The height of the rectangle
-        Raises:
-            TypeError: If width and height are not an interger
-            ValueError: If width and height are less than 0
         """
         self.__width = width
         self.__height = height
