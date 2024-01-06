@@ -6,8 +6,10 @@ class Rectangle:
     """Represents the rectangle"""
 
     number_of_instances = 0
+    """Number of active instances"""
 
     print_symbol = "#"
+    """Symbol for string representation"""
 
     def __init__(self, width=0, height=0):
         """Initialization for rectangle
@@ -15,9 +17,9 @@ class Rectangle:
                 width (int): The width of the rectangle
                 height (int): The height of the rectangle
         """
-        Rectangle.number_of_instances += 1
         self.__width = width
         self.__height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
