@@ -1,4 +1,4 @@
-#!/usr/bin/Vpython3
+#!/usr/bin/python3
 """Represents a rectangle."""
 
 
@@ -17,7 +17,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Getter/setter for width of the rectangle"""
+        """Getter for width of the rectangle"""
         return self.__width
 
     @width.setter
@@ -30,7 +30,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getter/setter for the height if the rectangle"""
+        """Setter for the height if the rectangle"""
         return self.__height
 
     @height.setter
