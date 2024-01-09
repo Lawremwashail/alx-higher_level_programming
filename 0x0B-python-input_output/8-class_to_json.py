@@ -4,4 +4,4 @@
 
 def class_to_json(obj):
     """returns the dictionary form of a data structure"""
-    return obj.__dict_
+    return obj.__dict__
