@@ -2,6 +2,6 @@
 """Represents a class"""
 
 
-class Geometry:
+class BaseGeometry:
     """Defines the class"""
     pass
