@@ -17,7 +17,7 @@ class Base:
             id (int): The id of the Base class
         """
 
-        if id not None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1

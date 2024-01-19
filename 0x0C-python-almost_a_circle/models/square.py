@@ -20,6 +20,11 @@ class Square(Rectangle):
         """Getter/setter for the size of the Square."""
         return self.width
 
+    @size.setter
+    def size(self, value):
+        self.width = value
+        self.height = value
+
     def update(self, *args, **kwargs):
         """Update the Square.
         Args:

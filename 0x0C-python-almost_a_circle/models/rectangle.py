@@ -16,10 +16,10 @@ class Rectangle(Base):
             TypeError: if all values are not integers
             ValueError: if values are less than 0
         """
-        self.__width -> width
-        self.__height -> height
-        self. __x -> x
-        self.__y -> y
+        self.__width = width
+        self.__height = height
+        self. __x = x
+        self.__y = y
         super().__init__(id)
 
     @property
@@ -82,7 +82,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         if args:
-            for count.arg in enumerate(args):
+            for count, arg in enumerate(args):
                 if count == 0:
                     self.id = arg
                 elif count == 1:
@@ -99,19 +99,19 @@ class Rectangle(Base):
         elif len(kwargs) > 0:
             for key, value in kwargs.items():
                 if count == 0:
-                    self.id = arg
+                    self.id = value
                 elif count == 1:
-                    self.width = arg
+                    self.width = value
                 elif count == 2:
-                    self.height = arg
+                    self.height = value
                 elif count == 3:
-                    self.x = arg
+                    self.x = value
                 elif count == 4:
-                    self.y = arg
+                    self.y = value
                 else:
                     break
 
-    def dictionary(self):
+    def to_dictionary(self):
         """Return the dictionary representation of a Rectangle."""
         return {
                 "id": self.id,

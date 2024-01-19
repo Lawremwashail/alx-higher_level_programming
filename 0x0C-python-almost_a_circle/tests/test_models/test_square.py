@@ -56,7 +56,7 @@ class TestSquare(unittest.TestCase):
         Tests if methods docstring documentation exists
         """
         for func in self.setup:
-            self.assertTrue(len(func[1].__doc__) >= 1)
+            self.assertTrue(func[1].__doc__ is not None and len(func[1]) >= 1)
 
     def test_square_init(self):
         """
