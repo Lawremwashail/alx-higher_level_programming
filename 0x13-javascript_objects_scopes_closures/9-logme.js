@@ -1,7 +1,7 @@
 #!/usr/bin/node
 let argCount = 0;
 
-export.logMe = function (item) {
-  console.log(`${count}: ${item}`);
+exports.logMe = function (item) {
+  console.log(`${argCount}: ${item}`);
   argCount++;
 };
