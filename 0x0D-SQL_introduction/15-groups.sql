@@ -1,4 +1,3 @@
---lists records with same score from second_table
-SELECT score, COUNT(*) AS number FROM second_table
-GROUP BY score
+-- lists records with same score from second_table
+SELECT score, COUNT(1) AS number FROM second_table GROUP BY score
 ORDER BY number DESC;
